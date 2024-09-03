@@ -32,4 +32,32 @@ func main() {
 	const myRune rune = 'a' // represents a unicode table (int32)
 	fmt.Println("The rune is", reflect.TypeOf(myRune))
 	fmt.Println(myRune)
+
+	// real numbers (float32, float64)
+	const x float32 = 49.99
+	fmt.Println("The float is", reflect.TypeOf(x))
+
+	// boolean
+	boo := true
+	fmt.Println("The boolean is", reflect.TypeOf(boo))
+
+	// string
+	s1 := "Hello, my name is Enzo"
+	fmt.Println(s1 + "!")
+	fmt.Println("The string is", reflect.TypeOf(s1))
+	fmt.Println(("The string length is"), len(s1))
+
+	// string with multiple lines
+	s2 := `Hello
+	my
+	name
+	is
+	Enzo`
+
+	fmt.Println(s2)
+
+	// char (not exist in Go)
+	// var x char = 'b'
+	char := 'a'
+	fmt.Println("The char is", reflect.TypeOf(char))
 }
