@@ -41,11 +41,4 @@ func main() {
 	// Power
 	pow := math.Max(float64(a), float64(b))
 	println("pow", pow)
-
-	// shift operations
-	shift := a << 1
-	println("shift", shift)
-
-	shift = a >> 1
-	println("shift", shift)
 }
