@@ -1,6 +1,9 @@
 package math
 
-import "strconv"
+import (
+	"fmt"
+	"strconv"
+)
 
 func CalculateMedia(values ...float64) float64 {
 	total := 0.0
@@ -10,7 +13,7 @@ func CalculateMedia(values ...float64) float64 {
 	}
 
 	media := total / float64(len(values))
-	roundedMedia, _ := strconv.ParseFloat(strconv.FormatFloat(media, 'f', 2, 64), 64)
+	roundedMedia, _ := strconv.ParseFloat(fmt.Sprintf("%.3f", media), 64)
 
 	return roundedMedia
 }
