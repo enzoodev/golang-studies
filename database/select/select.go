@@ -23,7 +23,7 @@ func main() {
 
 	defer database.Close()
 
-	rows, _ := database.Query("SELECT id, name, cpf FROM users WHERE id = ?", 1)
+	rows, _ := database.Query("SELECT id, name, cpf FROM users WHERE id > ?", 1)
 	defer rows.Close()
 
 	for rows.Next() {
